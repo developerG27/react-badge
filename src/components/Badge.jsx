@@ -1,15 +1,8 @@
 import React from 'react';
 import './styles/Badge.css';
-import { timingSafeEqual } from 'crypto';
 
 class Badge extends React.Component {
   render() {
-    // this.props;
-
-    // const firstName = 'Gian';
-    // const lastName = 'Pumayalla';
-
-
     return (
       <div className="Badge">
         <div className="Badge__header">
