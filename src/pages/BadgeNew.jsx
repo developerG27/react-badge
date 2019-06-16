@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import '../components/styles/Badge.css';
 import Badge from '../components/Badge.jsx';
+import BadgeForm from '../components/BadgeForm.jsx';
 
 class BadgeNew extends React.Component{
   render(){
@@ -14,7 +15,7 @@ class BadgeNew extends React.Component{
 
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-6">
               <Badge 
                 firstName="Gian" 
                 lastName="Pumayalla" 
@@ -22,6 +23,10 @@ class BadgeNew extends React.Component{
                 jobTitle="Full Stack Developer" 
                 country="Italy" 
               />
+            </div>
+
+            <div className="col-6">
+              <BadgeForm />
             </div>
           </div>
         </div>
