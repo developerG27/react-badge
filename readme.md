@@ -16,3 +16,6 @@ Solo i componenti che devono avere accesso allo state sono classi, il resto sono
 
 ### Elemento vs Componente
 Se un elemento fosse una casa, il componente serebbe il piano per fare quella casa.
+
+## Props
+È la forma abbreviata di properties, sono argomenti di una funzione
