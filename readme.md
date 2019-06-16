@@ -19,3 +19,5 @@ Se un elemento fosse una casa, il componente serebbe il piano per fare quella ca
 
 ## Props
 È la forma abbreviata di properties, sono argomenti di una funzione
+
+## State
