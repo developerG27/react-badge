@@ -45,10 +45,10 @@ class Badges extends React.Component {
 
         <div className="Badges">
           <div className="Badges__hero">
-            <div className="Badges__container">
+            <div className="Badges__container p-0">
               <img
                 className="Badges_conf-logo"
-                src="https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
+                src="https://dummyimage.com/1200x200/000/fff"
                 alt="Conf Logo"
               />
             </div>

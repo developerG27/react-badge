@@ -29,8 +29,8 @@ class BadgeNew extends React.Component {
     return (
       <div>
         <Navbar />
-        <div className="BadgeNew__hero">
-          <img className="img-fluid" src="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon" alt="Logo" />
+        <div className="BadgeNew__hero mb-5">
+          <img className="img-fluid" src="https://dummyimage.com/1200x250/000/fff" alt="Logo" />
         </div>
 
         <div className="container">
@@ -41,7 +41,7 @@ class BadgeNew extends React.Component {
                 lastName={this.state.form.lastName}
                 jobTitle={this.state.form.jobTitle}
                 email={this.state.form.email}
-                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
+                avatarUrl="https://dummyimage.com/60x60/000/fff"
               />
             </div>
 

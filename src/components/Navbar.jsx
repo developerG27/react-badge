@@ -6,7 +6,7 @@ class Navbar extends React.Component{
     return(
       <div className="Navbar">
         <div className="container-fluid">
-          <a href="/" className="Navbar__brand">
+          <a href="/" className="Navbar__brand p-3">
             <img className="Navbar__brand-logo" src="https://www.gravatar.com/avatar?d=identicon" alt="Logo"/>
             <span className="font-weight-light">Badge</span>
           </a>

@@ -6,7 +6,6 @@ class BadgeForm extends React.Component{
     lastName: '',
     email: '',
     jobTitle: '',
-    country: ''
   };
 
   // handleChange = (e) =>{

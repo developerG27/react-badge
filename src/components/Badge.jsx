@@ -6,7 +6,7 @@ class Badge extends React.Component {
     return (
       <div className="Badge">
         <div className="Badge__header">
-          <img src="https://www.gravatar.com/avatar?d=identicon" alt="Logo"/>
+          <img className="rounded-circle" src="https://dummyimage.com/64x64/fff/000" alt="Logo"/>
         </div>
         <div className="Badge__section-name">
           <img className="Badge__avatar" src={this.props.avatar} alt="Avatar"/>
