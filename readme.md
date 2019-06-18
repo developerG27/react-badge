@@ -30,3 +30,13 @@ Lo state dovrebbe essere di solo lettura, se vogliamo modificarlo dobbiamo usare
 setState()
 ```
 Non si dovrebbe mai cambiare gli oggetti originali, bensì crearne di nuovi, in modo tale passiamo avere una tracciabilità di tutti i cambi che avvengono.
+
+
+## Single Page Apps (SPA)
+
+## React Router
+È il protagonista per le single page application, si divide in 4 concetti:
+- BrowserRouter: È il componente contenitore necessario per il funzionamento di una Single Page Application
+- Route: È il percorso concreto
+- Switch: Dove puoi scegliere il percorso della tua pagina web
+- Link: Ci permette navigare le pagine della nostra applicazione senza ricaricare completamente la pagina.
