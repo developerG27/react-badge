@@ -13,6 +13,8 @@ class BadgeNew extends React.Component {
       lastName: '',
       email: '',
       jobTitle: '',
+      avatar: '',
+      country: '',
     },
   };
 
@@ -41,7 +43,8 @@ class BadgeNew extends React.Component {
                 lastName={this.state.form.lastName}
                 jobTitle={this.state.form.jobTitle}
                 email={this.state.form.email}
-                avatarUrl="https://dummyimage.com/60x60/000/fff"
+                avatar="https://dummyimage.com/120x120/000/fff"
+                country={this.state.form.country}
               />
             </div>
 
