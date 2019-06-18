@@ -17,6 +17,24 @@ Solo i componenti che devono avere accesso allo state sono classi, il resto sono
 ### Elemento vs Componente
 Se un elemento fosse una casa, il componente serebbe il piano per fare quella casa.
 
+### Ciclo di vita
+Ci sono diversi passaggi di vita di un componente: 
+- Montaggio: rapprenta il momento in cui il codice del componente si inserisce all'interno del DOM, si chiamano tre metodi:
+```js
+constructor()
+render()
+componentDidMount()
+```
+- Attualizzazione: quando i props e lo state di un componente cambiano
+```js
+render()
+componentDidUpdate()
+```
+-Smontaggio: ci permette fare la pulizia dei nostri componenti
+```js
+componentWillUnmount()
+```
+
 ## Props
 È la forma abbreviata di properties, sono argomenti di una funzione
 
