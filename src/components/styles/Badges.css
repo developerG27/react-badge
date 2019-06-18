@@ -28,3 +28,13 @@
   justify-content: flex-end;
   margin-bottom: 1rem;
 }
+ul > li{
+  border: 1px solid #d1d1d1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px #1d1d1d;
+}
+ul > li > p{
+  margin-bottom: 0px;
+  padding: 20px;
+}

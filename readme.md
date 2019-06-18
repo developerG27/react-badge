@@ -21,7 +21,7 @@ Se un elemento fosse una casa, il componente serebbe il piano per fare quella ca
 È la forma abbreviata di properties, sono argomenti di una funzione
 
 ## State
-Esistono due tipi di componenti: 
+Esistono due tipi di componenti:
 - Con lo state: statefull components
 - Senza state: stateless components
 Lo state dovrebbe essere di solo lettura, se vogliamo modificarlo dobbiamo usare un nuovo oggetto.

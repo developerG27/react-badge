@@ -1,17 +1,20 @@
 import React from 'react';
-import Navbar from '../components/Navbar.jsx';
-import '../components/styles/Badge.css';
-import Badge from '../components/Badge.jsx';
-import BadgeForm from '../components/BadgeForm.jsx';
 
-class BadgeNew extends React.Component{
-  state = {form:{
-    firstName: '',
-    lastName: '',
-    email: '',
-    jobTitle: '',
-    country: '',
-  } };
+// import '../components/styles/Badges';
+// import header from '../images/badge-header.svg';
+import Badge from '../components/Badge';
+import BadgeForm from '../components/BadgeForm';
+import Navbar from '../components/Navbar';
+
+class BadgeNew extends React.Component {
+  state = {
+    form: {
+      firstName: '',
+      lastName: '',
+      email: '',
+      jobTitle: '',
+    },
+  };
 
   handleChange = e => {
     this.setState({
@@ -20,30 +23,30 @@ class BadgeNew extends React.Component{
         [e.target.name]: e.target.value,
       },
     });
-  }
+  };
 
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <Navbar />
         <div className="BadgeNew__hero">
-          <img src="https://www.gravatar.com/avatar?d=identicon" alt="Logo" className="img-fluid"/>
+          <img className="img-fluid" src="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon" alt="Logo" />
         </div>
 
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <Badge 
+              <Badge
                 firstName={this.state.form.firstName}
                 lastName={this.state.form.lastName}
-                avatar="https://www.gravatar.com/avatar?d=identicon" 
                 jobTitle={this.state.form.jobTitle}
-                country={this.state.form.country}
+                email={this.state.form.email}
+                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
               />
             </div>
 
             <div className="col-6">
-              <BadgeForm 
+              <BadgeForm
                 onChange={this.handleChange}
                 formValues={this.state.form}
               />
@@ -51,7 +54,7 @@ class BadgeNew extends React.Component{
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
