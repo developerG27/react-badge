@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import './global.css';
 
-// import BadgeNew from './pages/BadgeNew';
-// import Badges from './pages/Badges';
+import './global.css';
 import App from './components/App';
 
-const container = document.getElementById('root')
-ReactDOM.render( <App /> , container);
+const container = document.getElementById('app');
 
-serviceWorker.unregister();
+ReactDOM.render(<App />, container);

@@ -1,25 +1,28 @@
 import React from 'react';
+
 import './styles/Badge.css';
+import Gravatar from './Gravatar';
 
 class Badge extends React.Component {
   render() {
     return (
       <div className="Badge">
         <div className="Badge__header">
-          <img className="rounded-circle" src="https://dummyimage.com/64x64/fff/000" alt="Logo"/>
+          <h2 class="text-white mb-0 pb-0">Profile</h2>
         </div>
+
         <div className="Badge__section-name">
-          <img className="Badge__avatar" src={this.props.avatar} alt="Avatar"/>
+          <Gravatar className="Badge__avatar" email={this.props.email} />
           <h1>
-            {this.props.firstName} <br/> {this.props.lastName}
+            {this.props.firstName} <br /> {this.props.lastName}
           </h1>
         </div>
+
         <div className="Badge__section-info">
-          <p>{this.props.jobTitle}</p>
+          <h3>{this.props.jobTitle}</h3>
+          <div>@{this.props.twitter}</div>
         </div>
-        <div className="Badge__footer">
-          {this.props.country}
-        </div>
+
       </div>
     );
   }
